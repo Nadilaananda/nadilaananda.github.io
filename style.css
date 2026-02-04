@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Perpustakaan Nadila</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Perpustakaan Nadila</h1>
+    <p class="tagline">Ruang literasi digital yang hangat dan inspiratif 📚</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Selamat Datang ✨</h2>
+      <p>
+        Perpustakaan Nadila hadir sebagai ruang literasi digital
+        untuk mendukung kegiatan belajar, membaca, dan eksplorasi
+        pengetahuan secara mudah dan menyenangkan.
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>📖 Koleksi Digital</h3>
+        <p>Beragam buku dan referensi yang dapat diakses kapan saja.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔍 Akses Mudah</h3>
+        <p>Pencarian informasi yang cepat dan ramah pengguna.</p>
+      </div>
+
+      <div class="card">
+        <h3>💡 Ruang Inspirasi</h3>
+        <p>Tempat bertemu ide, pengetahuan, dan semangat membaca.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 · Perpustakaan Nadila
+  </footer>
+
+</body>
+</html>
