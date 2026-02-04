@@ -3,46 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <title>Perpustakaan Nadila</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffd1dc, #ffb6c1);
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeUp 1.5s ease;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.25);
+      padding: 20px;
+      width: 220px;
+      border-radius: 16px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(255,255,255,0.35);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* animasi background */
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    @keyframes rise {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <header>
+  <!-- animasi bubble -->
+  <div class="bubble" style="left:10%; animation-duration:12s;"></div>
+  <div class="bubble" style="left:40%; animation-duration:9s;"></div>
+  <div class="bubble" style="left:70%; animation-duration:14s;"></div>
+
+  <div class="container">
     <h1>Perpustakaan Nadila</h1>
-    <p class="tagline">Ruang literasi digital yang hangat dan inspiratif 📚</p>
-  </header>
+    <p class="subtitle">
+      Ruang literasi digital yang hangat dan inspiratif 📚
+    </p>
 
-  <main>
-    <section class="welcome">
-      <h2>Selamat Datang ✨</h2>
-      <p>
-        Perpustakaan Nadila hadir sebagai ruang literasi digital
-        untuk mendukung kegiatan belajar, membaca, dan eksplorasi
-        pengetahuan secara mudah dan menyenangkan.
-      </p>
-    </section>
-
-    <section class="features">
+    <div class="cards">
       <div class="card">
-        <h3>📖 Koleksi Digital</h3>
-        <p>Beragam buku dan referensi yang dapat diakses kapan saja.</p>
+        <h3>📖 Koleksi</h3>
+        <p>Buku dan referensi pilihan untuk menemani belajar.</p>
       </div>
 
       <div class="card">
         <h3>🔍 Akses Mudah</h3>
-        <p>Pencarian informasi yang cepat dan ramah pengguna.</p>
+        <p>Informasi cepat, sederhana, dan ramah pengguna.</p>
       </div>
 
       <div class="card">
-        <h3>💡 Ruang Inspirasi</h3>
-        <p>Tempat bertemu ide, pengetahuan, dan semangat membaca.</p>
+        <h3>💡 Inspirasi</h3>
+        <p>Tempat bertemu ide, cerita, dan pengetahuan.</p>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    © 2026 · Perpustakaan Nadila
-  </footer>
+    <footer>
+      © 2026 · Perpustakaan Nadila
+    </footer>
+  </div>
 
 </body>
 </html>
