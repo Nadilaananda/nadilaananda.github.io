@@ -1,116 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Perpustakaan Nadila</title>
-
-<style>
-body{
-  margin:0;
-  min-height:100vh;
-  background:linear-gradient(135deg,#ffd1dc,#ffb6c1);
-  font-family:Arial, sans-serif;
-  color:white;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.container{
-  text-align:center;
-  max-width:900px;
-  animation:fadeUp 1.5s ease;
-}
-
-h1{
-  font-size:48px;
-  margin-bottom:10px;
-}
-
-.tagline{
-  font-size:18px;
-  margin-bottom:40px;
-}
-
-.section{
-  margin-bottom:40px;
-}
-
-.cards{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.card{
-  background:rgba(255,255,255,0.25);
-  padding:20px;
-  border-radius:16px;
-  width:240px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px) scale(1.05);
-  background:rgba(255,255,255,0.35);
-}
-
-footer{
-  margin-top:40px;
-  font-size:14px;
-  opacity:0.8;
-}
-
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(40px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Nadila - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Perpustakaan Nadila" width="100">
+            <h1>Perpustakaan Nadila</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#koleksi">Koleksi</a></li>
+                <li><a href="#berita">Berita</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Cari buku...">
+            <button>Cari</button>
+        </div>
+    </header>
 
-<div class="container">
-  <h1>Perpustakaan Nadila</h1>
-  <p class="tagline">Ruang literasi digital yang hangat dan inspiratif 📚</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Selamat Datang di Perpustakaan Nadila</h2>
+        <p>Tempat belajar dan berkreasi dengan ribuan buku.</p>
+        <button>Jelajahi Koleksi</button>
+    </section>
 
-  <div class="section">
-    <h2>Selamat Datang ✨</h2>
-    <p>
-      Perpustakaan Nadila hadir sebagai ruang literasi digital
-      untuk mendukung kegiatan belajar, membaca, dan eksplorasi
-      pengetahuan secara mudah dan menyenangkan.
-    </p>
-  </div>
+    <!-- Konten Utama -->
+    <section id="koleksi">
+        <h3>Koleksi Terbaru</h3>
+        <div class="grid">
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Buku 1">
+                <h4>Judul Buku 1</h4>
+                <p>Penulis: Nama Penulis</p>
+            </div>
+            <!-- Tambah lebih banyak buku -->
+        </div>
+    </section>
 
-  <div class="cards">
-    <div class="card">
-      <h3>📖 Koleksi Digital</h3>
-      <p>Beragam buku dan referensi yang dapat diakses kapan saja.</p>
-    </div>
-
-    <div class="card">
-      <h3>🔍 Akses Mudah</h3>
-      <p>Pencarian informasi yang cepat dan ramah pengguna.</p>
-    </div>
-
-    <div class="card">
-      <h3>💡 Ruang Inspirasi</h3>
-      <p>Tempat bertemu ide, pengetahuan, dan semangat membaca.</p>
-    </div>
-  </div>
-
-  <footer>
-    © 2026 · Perpustakaan Nadila
-  </footer>
-</div>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Perpustakaan Nadila. Kontak: email@nadila.com</p>
+    </footer>
 </body>
 </html>
